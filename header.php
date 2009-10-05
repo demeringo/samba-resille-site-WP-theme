@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
+<!--
 <style type="text/css" media="screen">
 
 <?php
@@ -27,7 +27,7 @@ if ( empty($withcomments) && !is_single() ) {
 <?php } ?>
 
 </style>
-
+-->
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> 
 
 <?php wp_head(); ?>
@@ -38,8 +38,14 @@ if ( empty($withcomments) && !is_single() ) {
 
 <div id="header" role="banner">
 	<div id="headerimg">
-		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-		<div class="description"><?php bloginfo('description'); ?></div>
+		<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
+		<!--<div class="description"><?php bloginfo('description'); ?></div>-->
 	</div>
 </div>
+ <div id="menupages">
+ <ul>
+ 	<?php wp_list_pages('title_li='); ?>
+      
+      </ul>
+      </div>
 <hr />
