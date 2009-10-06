@@ -38,8 +38,11 @@ if ( empty($withcomments) && !is_single() ) {
 
 <div id="header" role="banner">
 	<div id="headerimg">
-		<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
-		<!--<div class="description"><?php bloginfo('description'); ?></div>-->
+		<!-- Make the banner clickable (links to home page) -->
+		<a href="<?php bloginfo('url'); ?>">
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/header.jpg"  alt="<?php bloginfo('name'); ?>" /></a>
+			<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
+			<!--<div class="description"><?php bloginfo('description'); ?></div>-->
 	</div>
 </div>
  <div id="menupages">
