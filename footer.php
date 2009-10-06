@@ -17,6 +17,10 @@
 		
 		
 	</p>
+	<p>
+	<?php wp_loginout(); ?>
+	<br /><?php wp_register(); ?>
+	</p>
 </div>
 </div>
 
