@@ -22,6 +22,5 @@ get_header(); ?>
 	<?php edit_post_link(__('Edit this entry.', 'kubrick'), '<p>', '</p>'); ?>
 	</div>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
