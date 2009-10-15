@@ -27,7 +27,8 @@ body {
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	background: #d5d6d7 url('images/haunted.gif');
 
-	color: #333;
+	/*color: #333;*/
+	color: black;
 	text-align: center;
 	}
 
@@ -86,7 +87,11 @@ border: 1px solid #ddd;
 	background: #fcc92c; /* Yellow that follow the background image of the top */
 	/*background: #e7e7e7 url('images/kubrickfooter.jpg') no-repeat top;*/
 	border: none;
+	border-top: 1px solid;
+	color: #A60000;
 	}
+
+
 
 small {
 	font-family: Arial, Helvetica, Sans-Serif;
@@ -133,7 +138,8 @@ h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
 	}
 
 h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
-	color: #333;
+	/*color: #333;*/
+	color: black;
 	color: white;
 	}
 
@@ -196,7 +202,8 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	}
 
 small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
-	color: #777;
+	/*color: #777;*/
+	color: black;
 	}
 
 code {
