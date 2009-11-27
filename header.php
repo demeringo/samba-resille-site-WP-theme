@@ -47,7 +47,9 @@ if ( empty($withcomments) && !is_single() ) {
 </div>
  <div id="menupages">
  <ul>
- 	<?php wp_list_pages('title_li='); ?>
+	<li><a href="<?php bloginfo('url'); ?>/category/evenements/" >Evenements</a>
+	</li>
+ 	<?php wp_list_pages('depth=1 & title_li='); ?>
       
       </ul>
       </div>
