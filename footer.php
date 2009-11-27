@@ -16,14 +16,12 @@
 <br/>
 	Site sous licence <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/"><strong>Creative Commons</strong></a>.Toute reproduction interdite sans autorisation préalable.<br/>
 	Crédits photo: <a href="http://www.fanettebruel.com" target='_blank'>Fanette Bruel</a> et Samba Résille. Contact: <a href="mailto:webmaster@samba-resille.org">webmaster@samba-resille.org</a>
+	<br/>
+			<?php wp_loginout(); ?><?php wp_register(' | ',''); ?>
 	</p>
 	<p>
 	<?php printf(__('%1$s and %2$s.', 'kubrick'), '<a href="' . get_bloginfo('rss2_url') . '">' . __('Entries (RSS)', 'kubrick') . '</a>', '<a href="' . get_bloginfo('comments_rss2_url') . '">' . __('Comments (RSS)', 'kubrick') . '</a>'); ?>
 		<!-- <?php printf(__('%d queries. %s seconds.', 'kubrick'), get_num_queries(), timer_stop(0, 3)); ?> -->
-		<ul>
-			<?php wp_register(); ?>
-			<li><?php wp_loginout(); ?></li>
-		</ul>
 	</p>
 	<p>
 <br/>
