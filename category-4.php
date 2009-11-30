@@ -11,17 +11,20 @@ get_header();
 
 	<div id="content" class="narrowcolumn" role="main">
 		<h2 class="pagetitle">Programmation du CICC</h2>
+		
 		<?php
-		$my_query = new WP_Query('category_name=Evenements&post_status=future&order=ASC');
+			
+			//$my_query = new WP_Query('category_name=Evenements&post_status=future&order=ASC');
+			//$my_query = new WP_Query('category_name=Evenements');
+
 		?>
-	
-		<?php if ($my_query->have_posts()) : ?>
+
+		<?php //if ($my_query->have_posts()) : ?>
+		<?php if (have_posts()) : 
+		?>
  	  	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
- 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
-			<div class="alignright"><?php previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
-		</div>
-		<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+ 		 <?php //while ($my_query->have_posts()) : $my_query->the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 		<div <?php post_class(); ?>>
 				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3>
 				<small><?php the_time(__('l, F jS, Y', 'kubrick')) ?></small>
@@ -35,13 +38,16 @@ get_header();
 			</div>
 
 		<?php endwhile; ?>
-
+		<h2>nav below </h2>
 		<div class="navigation">
+		<div class="alignleft"><?php //$my_query->next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
+			<div class="alignright"><?php  //$my_query->previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
+
 			<div class="alignleft"><?php next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
-			<div class="alignright"><?php previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
+			<div class="alignright"><?php  previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
 		</div>
 	<?php else :?>
-	Aucun évènement
+	Aucun evenement
 	<?php endif;?>
 	</div>
 
