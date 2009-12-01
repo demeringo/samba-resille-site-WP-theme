@@ -38,13 +38,12 @@ get_header();
 			</div>
 
 		<?php endwhile; ?>
-		<h2>nav below </h2>
+		
 		<div class="navigation">
-		<div class="alignleft"><?php //$my_query->next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
-			<div class="alignright"><?php  //$my_query->previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
-
 			<div class="alignleft"><?php next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
+			<?php //$my_query->next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?>
 			<div class="alignright"><?php  previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
+			<?php  //$my_query->previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?>
 		</div>
 	<?php else :?>
 	Aucun evenement
