@@ -122,7 +122,21 @@ h2 {
 h2.pagetitle {
 	font-size: 1.6em;
 	}
+h2.eventPageTitle{
+	color: white;
+	font-weight: normal;
+	font-size: 270%;
 
+	text-align: right;
+	margin-top: 0.5em;
+	margin-right: 0pt;
+	margin-bottom: 1em;
+	margin-left: 0pt;
+	
+	//	margin-top: 30px;
+  background: url(images/bandeauNuage.gif) center right no-repeat;
+
+	}
 #sidebar h2 {
 	font-family: 'Lucida Grande', Verdana, Sans-Serif;
 	font-size: 1.2em;

@@ -9,8 +9,8 @@
 get_header();
 ?>
 
-	<div id="content" class="narrowcolumn" role="main">
-		<h2 class="pagetitle">Programmation du CICC</h2>
+	<div id="content" class="narrowcolumn eventPage" role="main">
+		<h2 class="pagetitle eventPageTitle">Programmation du CICC</h2>
 		
 		<?php
 			
