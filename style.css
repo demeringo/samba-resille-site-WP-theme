@@ -762,7 +762,9 @@ div.aligncenter {
 	display: inline;
 	margin: 0 30px 0 0;	
 	}
+
 #menupages a{
+	font-size: 15px;
 	color: white;
 	text-decoration: none;
 	}
