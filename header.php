@@ -35,16 +35,6 @@ if ( empty($withcomments) && !is_single() ) {
 <body <?php body_class(); ?>>
 <div id="page">
 
-
-<div id="header" role="banner">
-	<div id="headerimg">
-		<!-- Make the banner clickable (links to home page) -->
-		<a href="<?php bloginfo('url'); ?>">
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/header.jpg"  alt="<?php bloginfo('name'); ?>" /></a>
-			<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
-			<!--<div class="description"><?php bloginfo('description'); ?></div>-->
-	</div>
-</div>
  <div id="menupages">
  <table>
  <tr>
@@ -68,4 +58,14 @@ if ( empty($withcomments) && !is_single() ) {
  	</ul>-->
  </ul>
  </div>
+<div id="header" role="banner">
+	<div id="headerimg">
+		<!-- Make the banner clickable (links to home page) -->
+		<a href="<?php bloginfo('url'); ?>">
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/header.jpg"  alt="<?php bloginfo('name'); ?>" /></a>
+			<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
+			<!--<div class="description"><?php bloginfo('description'); ?></div>-->
+	</div>
+</div>
+
 <hr />
