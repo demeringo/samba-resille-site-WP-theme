@@ -35,7 +35,29 @@ if ( empty($withcomments) && !is_single() ) {
 <body <?php body_class(); ?>>
 <div id="page">
 
+ <div id="menupages">
+ <table>
+ <tr>
+<td><a href="<?php bloginfo('url'); ?>" >Accueil</a><br/>news</td>
+	<td><a href="<?php bloginfo('url'); ?>/category/evenements/" >Programmation</a><br/>Concerts, expos, stages</td>
+  <td><a href="<?php bloginfo('url'); ?>/spectacles" >Spectacles</a><br/>La troupe, la pieuvre</td>
+  <td><a href="<?php bloginfo('url'); ?>/apprendre" >Jouer</a><br/>Cours, médiation</td>
+  <td><a href="<?php bloginfo('url'); ?>/association/" >L'association</a></td>
+  <td><a href="<?php bloginfo('url'); ?>/reseau" >Réseau</td>
+  <td><a href="<?php bloginfo('url'); ?>/adherents" >Adhérents</td>
+ </tr>
+ </table>
 
+  
+
+ 	<!--
+ 	<ul>
+  <li>
+ 	<?php wp_list_pages('depth=1 & title_li='); ?>
+ 	</li>
+ 	</ul>-->
+ </ul>
+ </div>
 <div id="header" role="banner">
 	<div id="headerimg">
 		<!-- Make the banner clickable (links to home page) -->
@@ -45,12 +67,5 @@ if ( empty($withcomments) && !is_single() ) {
 			<!--<div class="description"><?php bloginfo('description'); ?></div>-->
 	</div>
 </div>
- <div id="menupages">
- <ul>
-	<li><a href="<?php bloginfo('url'); ?>/category/evenements/" >Evenements</a>
-	</li>
- 	<?php wp_list_pages('depth=1 & title_li='); ?>
-      
-      </ul>
-      </div>
+
 <hr />
